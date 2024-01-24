@@ -1,10 +1,17 @@
 /* CSS file for variables - only variables goes here*/
 
 :root {
+    /* colors*/
    --blue: #233dff;
    --beige: #f6f3ee;
    --greige: #eeeeee;
    --black: #000000;
    --white: #ffffff;
 
+   /* Font sizes*/
+   --fs-xsmall: 0.5rem;
+   --fs-btn: 0.875rem;
+   --fs-normal: 1rem; 
+   --fs-medium: 2.375rem;
+   --fs-large: 3rem;
 }
