@@ -1,0 +1,31 @@
+
+
+button {
+    height: 40px;
+    width: 110px;
+    border: solid 1.5px var(--blue);
+    border-radius: 4px;
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: var(--fs-btn);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    height: 40px;
+    width: 110px;
+    border: solid 1.5px var(--blue);
+    border-radius: 4px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    height: 35px;
+    width: 600px;
+    border: solid 1.5px;
+    border-radius: 4px;
+}
