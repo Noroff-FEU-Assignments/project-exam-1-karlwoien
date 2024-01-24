@@ -9,7 +9,7 @@
 
 .intro-content-text {
     grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-end: 7;
 }
 
 .intro-content-image {
@@ -17,7 +17,7 @@
     justify-content: flex-end;
     width: 660px;
     grid-column-end: 12;
-    grid-column-start: 7;
+    grid-column-start: 8;
 }
 
 .intro-content-image img{
@@ -51,6 +51,14 @@
 
 .newsletter {
     padding-bottom: 100px;
+}
+
+.newsletter h2{
+    font-size: var(--fs-normal);
+}
+
+.newsletter input {
+    border: solid 1.5px var(--blue);
 }
 
 .newsletter-content {
