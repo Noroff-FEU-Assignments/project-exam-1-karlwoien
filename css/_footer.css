@@ -4,5 +4,38 @@ footer {
     background-color: var(--beige);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     height: 400px;
+}
+
+.logo-footer {
+    grid-column-start: 2;
+}
+
+.logo-footer img {
+    width: 120px;
+}
+
+.footer-left {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.footer-right {
+    grid-column-start: 9;
+}
+
+.footer-right-links {
+    grid-column-start: 9;
+}
+
+.footer-right-some {
+    grid-column-end: 12;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 12;
 }
