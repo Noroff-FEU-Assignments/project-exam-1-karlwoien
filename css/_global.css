@@ -3,9 +3,13 @@
 body {
     margin: 0;
     scroll-behavior: smooth;
+    
 }
 
-
+main {
+    margin-left: 120px;
+    margin-right: 120px;
+}
 
 h1,
 h2,
