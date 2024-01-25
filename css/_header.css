@@ -3,13 +3,11 @@
 header {
     background-color: var(--beige);
     text-transform: uppercase;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
     height: 120px;
-}
-
-.logo-header {
-    grid-column-start: 2;
 }
 
 .logo-header img{
@@ -18,10 +16,7 @@ header {
 
 nav {
    display: flex;
-   justify-content: flex-end;
    gap: 20px;
-   grid-column-start: 9;
-   grid-column-end: 12;
    align-items: center;
    font-size: 18px;
    font-weight: bold;

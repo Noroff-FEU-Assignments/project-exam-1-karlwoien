@@ -77,6 +77,10 @@
     margin-top: 100px;
 }
 
+.newsletter-content {
+    padding-bottom: 100px;
+}
+
 .newsletter h2{
     font-size: var(--fs-normal);
 }

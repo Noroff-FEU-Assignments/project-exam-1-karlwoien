@@ -9,9 +9,9 @@
    --white: #ffffff;
 
    /* Font sizes*/
-   --fs-xsmall: 0.5rem;
-   --fs-btn: 0.875rem;
-   --fs-normal: 1rem; 
-   --fs-medium: 2.375rem;
-   --fs-large: 3rem;
+   --fs-xsmall: 0.75rem;    /*12px*/
+   --fs-btn: 0.875rem;      /*14px*/
+   --fs-normal: 1rem;       /*16px*/
+   --fs-medium: 2.375rem;   /*38px*/
+   --fs-large: 3rem;        /*48px*/
 }
