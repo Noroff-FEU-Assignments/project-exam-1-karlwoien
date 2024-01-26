@@ -1,0 +1,28 @@
+/*CSS file containing styling of blog page*/
+
+.intro-blog {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.intro-blog-filter{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#blog-search {
+    width: 240px;
+    height: 25px;
+    border: solid 1.5px var(--blue);
+}
+
+#blog-filter,
+#blog-sort {
+    width: 90px;
+    height: 25px;
+    border: solid 1.5px var(--blue);
+    border-radius: 4px;
+}
