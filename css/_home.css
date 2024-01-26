@@ -85,6 +85,10 @@
     font-size: var(--fs-normal);
 }
 
+.newsletter h3 {
+    margin-top: 0;
+}
+
 .newsletter input {
     border: solid 1.5px var(--blue);
 }
