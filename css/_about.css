@@ -1,0 +1,31 @@
+/*CSS file for styling of about page*/
+
+.about-content,
+.about-ad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.about-content-text,
+.about-ad-text {
+    max-width: 500px;
+}
+
+.about-content-image {
+    width: 640px;
+    height: 440px;
+    background-image: url("/assets/images/spencer-davis-vJsj-hgOEG0-unsplash.jpg");
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.about-ad-image {
+    width: 640px;
+    height: 440px;
+    background-image: url("/assets/images/kate-trysh-Dnkr_lmdKi8-unsplash.jpg");
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
