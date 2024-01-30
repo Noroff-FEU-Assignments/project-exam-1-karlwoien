@@ -24,24 +24,30 @@
     <!--Start of main-->
     <main>
       <div class="contact">
-            <h1>Contact</h1>
-            <p>Some random text about contact</p>
-            <div>
-                <label for="name">Name</label>
-                <input type="name" name="name" id="">
+            <div class="contact-intro">
+                <h1>Contact</h1>
+                <p>Some random text about contact</p>
             </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="">
-            </div>
-            <div>
-                <label for="subject">Subject</label>
-                <input type="subject" name="subject" id="">
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <input type="message" name="message" id="">
-            </div>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <input type="text" name="message" id="message" placeholder="Your message">
+                    </div>
+                </form>
+           </div>
       </div>
     </main>
     <!--Start of footer-->
