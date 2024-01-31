@@ -16,16 +16,17 @@ export function renderPost (postData) {
 
 }
 
-export function renderPosts (listOfPosts) {
-    listOfPosts.forEach(renderPost);
+export function renderPosts () {
+try {
+   const posts = await fetch(getPosts);
+   if (!response.ok) {
+    throw new Error ("404 - there has been a big mistake")
+   }
+   return posts.json();
+}
 }
 
 export async function blogPosts () {
-    try {
-        const posts = await getPosts();
-        renderPosts();
-        
-    } catch (error) {
-        alert (error);
-    }
+   const getResults = await renderPost();
+   renderPost(getResults);
 }
