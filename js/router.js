@@ -5,7 +5,7 @@
 // Blog post: blog post data specific
 // Contact: Forum submission listener
 
-import { blogPosts } from "./pages/blog.js";
+import { blogPage } from "./pages/blog.js";
 
 export function router () {
     switch(window.location.pathname) {
@@ -27,7 +27,7 @@ export function router () {
         case "/blog/":
         case "/blog/index.html":
             console.log("blog page");
-            blogPosts();
+            blogPage();
             break;
         case "/blog/blog-post":
         case "/blog/blog-post/":

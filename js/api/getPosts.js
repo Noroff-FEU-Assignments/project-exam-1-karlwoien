@@ -1,16 +1,15 @@
-import { apiUrl } from "./url.js";
+import { urlPosts } from "./url.js";
 
 // Get all the blog posts
 
-export async function getPosts () {
-    const response = await fetch (apiUrl);
-    const posts = await response.json ();
-    if (!response.ok) {
-        throw new Error ("404 - something went wrong");
-    }
-    return posts;
-}
+export async function getPosts() {
+    const response = await fetch(urlPosts);
 
+    if (response.ok) {
+        return await response.json();
+    }
+    throw new Error ("Need to add som error handling here")
+}
 
 //Get a single blog post by id
 

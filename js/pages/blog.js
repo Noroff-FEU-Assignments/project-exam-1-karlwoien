@@ -1,32 +1,51 @@
 import { getPosts } from "../api/getPosts.js";
 
-export function renderPost (postData) {
-    const postElement = document.createElement ("a");
-    //postElement.href = "/blog/blog-post/index.html/?id=" + postData.id;
+async function createPostCard (postData) {
+
+   /*const card = document.createElement("div"); MAYBE A WRAPPER HERE?*/
+
+    const card = document.createElement ("a");
+    card.href = '/blog/blog-post/?id=' + postData.id;
 
     const img = document.createElement ("img");
-    img.src = postData.featured_media[0].source_url;
-    postElement.append(img);
+    img.classList.add("blog-grid-posts");
+    if (
+         postData._embedded &&
+         postData._embedded["wp:featuredmedia"] &&
+         postData._embedded["wp:featuredmedia"][0]
+    ) {
+         img.src = postData._embedded["wp:featuredmedia"][0].source_url;
+    } else {
+      console.log("The blog post need an image");
+    }
+    card.append(img);
 
-    const postTitle = document.createElement("h3")
-    postTitle.innerText = postData.name;
-    postElement.append (postTitle);
+    
 
-    document.querySelector(".blog-grid-posts").append(postElement);
+    const title = document.createElement("h3")
+    title.textContent = postData.title.rendered;
+    card.append (title);
+
+    document.querySelector(".blog-grid-posts").append(card);
 
 }
 
-export function renderPosts () {
-try {
-   const posts = await fetch(getPosts);
-   if (!response.ok) {
-    throw new Error ("404 - there has been a big mistake")
+async function renderPosts (posts) {
+   posts.forEach(createPostCard);
+   };
+
+async function loadPosts () {
+   try {
+      const card = await getPosts();
+      renderPosts(card)
+   } catch (error) {
+      console.log("There has been an Error, you suck at coding");
    }
-   return posts.json();
-}
 }
 
-export async function blogPosts () {
-   const getResults = await renderPost();
-   renderPost(getResults);
+
+   
+
+export async function blogPage () {
+   loadPosts();
 }

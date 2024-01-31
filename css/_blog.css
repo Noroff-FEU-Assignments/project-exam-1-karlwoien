@@ -2,9 +2,11 @@
 
 .intro-blog {
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: baseline;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .intro-blog-filter{
@@ -13,16 +15,35 @@
     gap: 20px;
 }
 
-#blog-search {
-    width: 240px;
-    height: 25px;
-    border: solid 1.5px var(--blue);
-}
-
 #blog-filter,
 #blog-sort {
-    width: 90px;
+    width: 200px;
     height: 25px;
     border: solid 1.5px var(--blue);
     border-radius: 4px;
+}
+
+.blog-grid-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.blog-grid-posts h3{
+    font-size: var(--fs-normal);
+    max-width: 400px;
+}
+
+
+.blog-grid-posts a {
+    padding-bottom: 20px;
+}
+
+.blog-grid-posts img {
+    width: 400px;
+    height: 600px;
+}
+
+.blog-grid-posts a:hover {
+    transform: scale(1.04);
 }
