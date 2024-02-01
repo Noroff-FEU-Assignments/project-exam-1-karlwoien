@@ -1,1 +1,34 @@
 /* CSS file for styling of different components*/
+
+/* Loader.. */
+.loader {
+    display: flex;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s, visivility 1s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 10px solid var(--white);
+    border-top-color: var(--blue);
+    border-radius: 50%;
+    animation: loading 0.5s linear infinite;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+  
+}

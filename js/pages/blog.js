@@ -1,5 +1,7 @@
 import { getPosts } from "../api/getPosts.js";
 
+
+// Create card for blog posts
 async function createPostCard (postData) {
 
    /*const card = document.createElement("div"); MAYBE A WRAPPER HERE?*/
@@ -30,22 +32,25 @@ async function createPostCard (postData) {
 
 }
 
+// Render posts
 async function renderPosts (posts) {
    posts.forEach(createPostCard);
    };
 
+//Load all the posts from server
 async function loadPosts () {
+   const loader = document.querySelector(".loader")
    try {
       const card = await getPosts();
       renderPosts(card)
+      loader.classList.remove("loader");
    } catch (error) {
-      console.log("There has been an Error, you suck at coding");
+      console.log("404 - not found");
    }
 }
 
-
+// Render blog page
    
-
 export async function blogPage () {
    loadPosts();
 }
