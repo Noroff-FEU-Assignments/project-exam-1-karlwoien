@@ -6,6 +6,7 @@
 // Contact: Forum submission listener
 
 import { blogPage } from "./pages/blog.js";
+import { postPage } from "./pages/post.js";
 
 export function router () {
     switch(window.location.pathname) {
@@ -33,6 +34,7 @@ export function router () {
         case "/blog/blog-post/":
         case "/blog/blog-post/index.html":
             console.log("blog-post page");
+            postPage();
             break;
         default:
             console.log("404 - not found")

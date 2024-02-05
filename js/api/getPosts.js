@@ -13,6 +13,11 @@ export async function getPosts() {
 
 //Get a single blog post by id
 
-export async function getPost () {
+export async function getPost (id) {
+    const response = await fetch(urlPosts + id);
 
+    if (response.ok) {
+        return await response.json();
+    }
+    throw new Error ("Need to add som error handling here")
 }
