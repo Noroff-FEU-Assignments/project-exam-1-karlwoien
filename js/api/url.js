@@ -2,8 +2,8 @@
 
 const host = "https://karlwoien.com";
 const endpointPosts = "/wp-json/wp/v2/posts?_embed";
-const endpointPost = '/wp-json/wp/v2/posts/${id}?_embed';
+const endpointPost = "/wp-json/wp/v2/posts/";
 
-export const urlPosts = new URL (endpointPosts, host);
+export const urlPosts = host + endpointPosts;
 
-export const urlPost = new URL (endpointPost, host);
+export const urlPost = host + endpointPost;

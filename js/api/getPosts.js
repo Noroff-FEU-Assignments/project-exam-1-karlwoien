@@ -17,12 +17,11 @@ export async function getPosts() {
 export async function getPost (id) {
 
     try {
-        const response = await fetch(urlPost);
-
+        const response = await fetch(urlPost + id);
+        const post = await response.json();
         if (!response.ok) {
             throw new Error ("Need to add som error handling here")
         }
-        const post =  await response.json();
         return post;
         
     } catch (error) {

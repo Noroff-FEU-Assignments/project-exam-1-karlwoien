@@ -12,49 +12,18 @@ function specificPost (postData) {
 }
 
 
-// Get post from server
+// Render post to page
 
-async function loadPost (id) {
+export async function postPage () {
     try {
-        let post = await getPost (id);
-        specificPost(post);   
-    } catch (error) {
-        console.log("Error with loadPost")
-    }
-}
+        const string = window.location.search;
+        const url = new URLSearchParams(string);
+        const id = url.get("id")
 
-
-// Get post from server
-
-export function postPage () {
-    const string = window.location.search;
-    const url = new URLSearchParams (string);
-    const idPost = url.get("id");
-    if (idPost) {
-        loadPost(idPost);
-    } else {
-        console.log ("We go an error")
-    }
-}
-
-
-
-/*async function renderPost (post) {
-    post(specificPost);
-}*/
-
-// Load specific post
-
-/*async function loadPost () {
-    try {
-        const post = await getPost(id);
-        renderPost(post);
+        const post = await getPost (id);
+        specificPost(post);
         
     } catch (error) {
-        console.log("hm.. something went wrong here")
+        console.log("something wrong with postPage")
     }
 }
-
-export async function postPage() {
-    loadPost();
-}*/
