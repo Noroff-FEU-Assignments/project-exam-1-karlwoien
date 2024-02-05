@@ -1,4 +1,4 @@
-// Base URL for wordpress site
+// Host and endpoints for wordpress site
 
 const host = "https://karlwoien.com";
 const endpointPosts = "/wp-json/wp/v2/posts?_embed";

@@ -1,4 +1,4 @@
-/* CSS file for global styling and layout - things that applye to the whole site goes here*/
+/* CSS file for global styling and layout - things that apply to the whole site goes here*/
 
 body {
     margin: 0;
@@ -7,6 +7,7 @@ body {
 }
 
 main {
+    margin-top: 100px;
     margin-left: 120px;
     margin-right: 120px;
 }

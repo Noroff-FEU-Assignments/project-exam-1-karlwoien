@@ -1,2 +1,18 @@
 /*CSS file for styling of blog post page*/
 
+.blog-post-intro {
+    margin-top: 100px;
+}
+
+.blog-post-main {
+    max-width: 840px;
+}
+
+.blog-post-main img {
+    width: 840px;
+}
+
+.blog-post-main li {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: var(--fs-normal);
+}
