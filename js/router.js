@@ -17,7 +17,7 @@ export function router () {
             carousel();
             break;
         case "/about":
-        case "about/":
+        case "/about/":
         case "/about/index.html":
             console.log("About page");
             carousel();
