@@ -1,5 +1,7 @@
 
 
+
+/* Styling of*/
 button {
     height: 40px;
     width: 110px;
@@ -27,5 +29,15 @@ input {
     height: 35px;
     width: 600px;
     border: solid 1.5px;
+    border-radius: 4px;
+}
+
+/* Carousel/slider button*/
+
+.left-btn,
+.right-btn {
+    height: 4px;
+    width: 20px;
+    border: solid 1.5px var(--blue);
     border-radius: 4px;
 }

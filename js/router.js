@@ -7,17 +7,20 @@
 
 import { blogPage } from "./pages/blog.js";
 import { postPage } from "./pages/post.js";
+import { carousel } from "./pages/home.js";
 
 export function router () {
     switch(window.location.pathname) {
         case "/":
         case "/index.html":
             console.log("Home page");
+            carousel();
             break;
         case "/about":
         case "about/":
         case "/about/index.html":
             console.log("About page");
+            carousel();
             break;
         case "/contact":
         case "/contact/":

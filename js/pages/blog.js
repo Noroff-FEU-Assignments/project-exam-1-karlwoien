@@ -4,8 +4,6 @@ import { getPosts } from "../api/getPosts.js";
 // Create card for blog posts
 async function createPostCard (postData) {
 
-   /*const card = document.createElement("div"); MAYBE A WRAPPER HERE?*/
-
     const card = document.createElement ("a");
     card.href = '/blog/blog-post/?id=' + postData.id;
 
@@ -42,7 +40,7 @@ async function loadPosts () {
    const loader = document.querySelector(".loader")
    try {
       const card = await getPosts();
-      renderPosts(card)
+      renderPosts(card);
       loader.classList.remove("loader");
    } catch (error) {
       console.log("404 - not found");
