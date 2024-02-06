@@ -38,12 +38,7 @@ Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-
 
 
 .latest-posts-carousel {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 30px;
-
 }
 
 .latest-posts-view {
@@ -51,13 +46,27 @@ Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    padding: 44px 0;
+    transition: all 0.24s ease-in;
 }
 
-.carousel-items {
+.latest-posts-view .carousel-items {
     display: flex;
-    gap: 20px;
+    gap: 48px;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
 }
 
+.carousel-items
+
+.carousel-items img{
+    scroll-snap-align: center;
+    min-width: 120px;
+    height: 120px;
+}  
 
 .carousel-items h3{
     font-size: var(--fs-normal);
@@ -66,7 +75,7 @@ Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-
 
 .carousel-items img{
     max-width: 400px;
-    height: auto;
+    height: 500px;
 }    
 
 

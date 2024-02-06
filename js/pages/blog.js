@@ -8,16 +8,7 @@ async function createPostCard (postData) {
     card.href = '/blog/blog-post/?id=' + postData.id;
 
     const img = document.createElement ("img");
-    img.classList.add("blog-grid-posts");
-    if (
-         postData._embedded &&
-         postData._embedded["wp:featuredmedia"] &&
-         postData._embedded["wp:featuredmedia"][0]
-    ) {
-         img.src = postData._embedded["wp:featuredmedia"][0].source_url;
-    } else {
-      console.log("The blog post need an image");
-    }
+    img.src = postData._embedded["wp:featuredmedia"][0].source_url;
     card.append(img);
 
     
