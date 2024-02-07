@@ -1,4 +1,5 @@
 import { getPost } from "../api/getPosts.js";
+import { changeTitle } from "../components/changeTitle.js";
 
 // Create intro content for specific post
 
@@ -64,13 +65,13 @@ export async function postPage () {
         const string = window.location.search;
         const url = new URLSearchParams(string);
         const id = url.get("id")
-
+        
         const post = await getPost (id);
+        changeTitle(post.title.rendered);
         loader.classList.remove("loader");
         introPost(post);
         mainPost(post);
         asidePost(post);
-        
     } catch (error) {
         console.log("something wrong with postPage")
     }
