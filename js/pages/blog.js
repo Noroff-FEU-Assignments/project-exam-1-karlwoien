@@ -1,6 +1,5 @@
 import { getPosts } from "../api/getPosts.js";
 
-
 // Create card for blog posts
 async function createPostCard (postData) {
 
@@ -31,8 +30,8 @@ async function loadPosts () {
    const loader = document.querySelector(".loader")
    try {
       const card = await getPosts();
-      renderPosts(card);
       loader.classList.remove("loader");
+      renderPosts(card);
    } catch (error) {
       console.log("404 - not found");
    }
