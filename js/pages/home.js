@@ -28,9 +28,10 @@ async function carouselCard (postData) {
 // Get latest blog posts
 
 async function getLatestPosts () {
-
+    const loader = document.querySelector(".loader")
    try {
        const card = await getPosts();
+       loader.classList.remove("loader");
        carouselCard(card);
    } catch (error) {
        console.log("Something wrong with carousel")

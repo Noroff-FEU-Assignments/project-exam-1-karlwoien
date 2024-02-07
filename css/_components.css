@@ -60,7 +60,9 @@ Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-
     scroll-snap-type: x mandatory;
 }
 
-.carousel-items
+.carousel-items::-webkit-scrollbar {
+    display: none;
+}
 
 .carousel-items img{
     scroll-snap-align: center;

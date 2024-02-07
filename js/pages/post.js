@@ -59,12 +59,14 @@ function asidePost (postData) {
 // Render post to page
 
 export async function postPage () {
+    const loader = document.querySelector(".loader")
     try {
         const string = window.location.search;
         const url = new URLSearchParams(string);
         const id = url.get("id")
 
         const post = await getPost (id);
+        loader.classList.remove("loader");
         introPost(post);
         mainPost(post);
         asidePost(post);

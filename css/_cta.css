@@ -36,8 +36,15 @@ input {
 
 .left-btn,
 .right-btn {
-    height: 4px;
-    width: 20px;
-    border: solid 1.5px var(--blue);
-    border-radius: 4px;
+    border: none;
 }
+
+.left-btn,
+.right-btn {
+    border: none;
+}
+
+.fa-solid .fa-arrow-left {
+    width: 100px;
+}
+
