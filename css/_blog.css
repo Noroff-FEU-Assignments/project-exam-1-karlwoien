@@ -9,6 +9,13 @@
     gap: 20px;
 }
 
+.blog-page-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
 .intro-blog-filter{
     display: flex;
     align-items: center;
