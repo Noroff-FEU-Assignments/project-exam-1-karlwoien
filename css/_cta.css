@@ -1,7 +1,7 @@
 
 
 
-/* Styling of*/
+/* Styling of button in general*/
 button {
     height: 40px;
     width: 110px;
@@ -32,19 +32,18 @@ input {
     border-radius: 4px;
 }
 
+
+/*Styling view more button*/
+
+#view-more-btn {
+    
+}
+
+
 /* Carousel/slider button*/
 
 .left-btn,
 .right-btn {
     border: none;
-}
-
-.left-btn,
-.right-btn {
-    border: none;
-}
-
-.fa-solid .fa-arrow-left {
-    width: 100px;
 }
 

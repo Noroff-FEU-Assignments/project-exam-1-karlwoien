@@ -1,5 +1,9 @@
 import { getPosts } from "../api/getPosts.js";
 
+let totalPosts = 0;
+const postPerPage = 9;
+
+
 // Create card for blog posts
 async function createPostCard (postData) {
 
@@ -20,18 +24,23 @@ async function createPostCard (postData) {
 
 }
 
-// Render posts
+// Render posts - with some suggestions from ChatGPT
 async function renderPosts (posts) {
-   posts.forEach(createPostCard);
+   const postsToRender = posts.slice(totalPosts, totalPosts + postPerPage)
+   postsToRender.forEach(createPostCard);
+   totalPosts += postsToRender.length;
    };
+
+
+
 
 //Load all the posts from server
 async function loadPosts () {
    const loader = document.querySelector(".loader")
    try {
-      const card = await getPosts();
+      const posts = await getPosts();
       loader.classList.remove("loader");
-      renderPosts(card);
+      renderPosts(posts);
    } catch (error) {
       console.log("404 - not found");
    }
@@ -42,3 +51,5 @@ async function loadPosts () {
 export async function blogPage () {
    loadPosts();
 }
+
+
