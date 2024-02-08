@@ -17,13 +17,16 @@
     padding-bottom: 20px;
 }
 
-.contact-content input{
+.contact-content input,
+.contact-content textarea {
     margin-top: 10px;
     width: 585px;
 }
 
-.contact-content #message{
+.contact-content textarea {
+    resize: none;
     height: 150px;
+    padding-top: 10px;
 }
 
 .contact-button {

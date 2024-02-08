@@ -29,7 +29,9 @@ h3 {
 }
 
 p,
-label {
+label,
+textarea,
+input {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: var(--fs-normal);
 }
@@ -39,7 +41,8 @@ a {
     color: var(--black);
 }
 
-input {
+input,
+textarea {
     padding-left: 10px;
     height: 35px;
     width: 600px;
