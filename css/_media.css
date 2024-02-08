@@ -1,2 +1,15 @@
 /* CSS file for media queries*/
 
+@media (max-width: 750px) {
+    main {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    
+    footer,
+    header {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+}
