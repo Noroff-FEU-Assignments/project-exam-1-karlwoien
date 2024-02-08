@@ -91,6 +91,7 @@
 
 .newsletter input {
     border: solid 1.5px var(--blue);
+    padding-left: 10px;
 }
 
 .newsletter-content {

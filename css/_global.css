@@ -28,7 +28,8 @@ h3 {
     font-size: var(--fs-medium);
 }
 
-p {
+p,
+label {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: var(--fs-normal);
 }
@@ -36,4 +37,12 @@ p {
 a {
     text-decoration: none;
     color: var(--black);
+}
+
+input {
+    padding-left: 10px;
+    height: 35px;
+    width: 600px;
+    border: solid 1px;
+    border-radius: 4px;
 }
