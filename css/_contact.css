@@ -35,3 +35,7 @@
     margin-top: 10px;
 }
 
+.form-error {
+    display: none;
+    color: red;
+}
