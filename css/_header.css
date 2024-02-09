@@ -1,4 +1,4 @@
-/* CSS file for styling reagaring the header */
+/* CSS file for styling regarding the header */
 
 header {
     background-color: var(--beige);
@@ -14,11 +14,37 @@ header {
     width: 120px;
 }
 
-nav {
+nav,
+.nav-menu {
    display: flex;
    gap: 20px;
    align-items: center;
    font-size: 18px;
    font-weight: bold;
 }
+
+.nav-link {
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--blue);
+}
+
+/* Hamburger menu inspired by Web Dev Tutorials: https://www.youtube.com/watch?v=flItyHiDm7E */
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--black);
+}
+
 
