@@ -8,6 +8,7 @@
 import { blogPage } from "./pages/blog.js";
 import { postPage } from "./pages/post.js";
 import { carousel } from "./pages/home.js";
+import { contactPage } from "./pages/contact.js";
 
 export function router () {
     switch(window.location.pathname) {
@@ -26,6 +27,7 @@ export function router () {
         case "/contact/":
         case "/contact/index.html":
             console.log("contact page");
+            contactPage();
             break;
         case "/blog":
         case "/blog/":
