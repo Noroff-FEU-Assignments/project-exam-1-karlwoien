@@ -1,14 +1,9 @@
 // Function to only run certain JS on certain pages
 
-// Home: Latest blog carousel
-// Blog: All blog posts 
-// Blog post: blog post data specific
-// Contact: Forum submission listener
-
 import { blogPage } from "./pages/blog.js";
 import { postPage } from "./pages/post.js";
 import { carousel } from "./pages/home.js";
-import { contactPage } from "./pages/contact.js";
+//import { contactPage } from "./pages/contact.js";
 
 export function router () {
     switch(window.location.pathname) {
