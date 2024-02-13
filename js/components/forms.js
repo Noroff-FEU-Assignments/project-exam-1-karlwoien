@@ -11,7 +11,7 @@ function inputLength (value, length) {
 // Check the e-mail that is passed in
 
 function validateMail(email) {
-    const regex = /\a+@\a+\.\a+/;
+    const regex = /\w+@\w+\.\w+/;
     const patternOk = regex.test(email);
     return patternOk;
 }
@@ -81,10 +81,16 @@ export function validateForm () {
     return validationOk;
 }
 
-requiredFields.forEach((field) => {
-    field.targeted = false;
-    field.addEventListener("input", () => {
-        field.targeted = true;
-        const validationPassed = validateForm();
+if (document.querySelector("#name") && document.querySelector("#email") && 
+    document.querySelector("#subject") && document.querySelector("#message")) {
+    
+    const requiredFields = [name, email, subject, message];
+
+    requiredFields.forEach((field) => {
+        field.targeted = false;
+        field.addEventListener("input", () => {
+            field.targeted = true;
+            validateForm();
+        });
     });
-});
+}

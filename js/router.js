@@ -3,7 +3,7 @@
 import { blogPage } from "./pages/blog.js";
 import { postPage } from "./pages/post.js";
 import { carousel } from "./pages/home.js";
-//import { contactPage } from "./pages/contact.js";
+import { contactPage } from "./pages/contact.js";
 
 export function router () {
     switch(window.location.pathname) {
