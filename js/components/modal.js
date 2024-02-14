@@ -4,7 +4,7 @@ Inspired by https://dev.to/salehmubashar/create-an-image-modal-with-javascript-2
 
 
 export function imageModal () {
-    const images = document.querySelectorAll(".wp-block-image img");
+    const images = document.querySelectorAll(".wp-block-image img, .blog-post-ad img");
 
     images.forEach((img)=> {
         img.addEventListener("click", (e) => {

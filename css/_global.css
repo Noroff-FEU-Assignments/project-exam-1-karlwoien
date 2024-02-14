@@ -38,6 +38,10 @@ input {
     font-size: var(--fs-normal);
 }
 
+p {
+    line-height: 1.5;
+}
+
 a {
     text-decoration: none;
     color: var(--black);

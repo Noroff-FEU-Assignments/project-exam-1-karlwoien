@@ -36,21 +36,23 @@ function postAd () {
     const container = document.createElement("div");
     container.classList.add("blog-post-ad");
 
+    const adContent = document.createElement ("div");
+    adContent.classList.add("ad-content");
+    container.append(adContent);
+
     const adHeading = document.createElement("h2");
     adHeading.innerText = "Pre-order our Cookbook!";
-    container.append(adHeading);
+    adContent.append(adHeading);
 
     const adText = document.createElement ("p");
-    adText.innerHTML = "Yes, you heard that right! Tasty vibes are soon coming out with our very own cookbook. If you wanna be the first to get it, just enter your e-mail below, and we will send you more information about the book, when its coming out, and give you a personal discount code."
-    container.append(adText);
+    adText.innerHTML = "Yes, you heard that right! Tasty vibes are soon coming out with our very own cookbook. If you wanna be the first to get it, just enter your e-mail at the bottom of the page, and we will send you more information about the book, when its coming out, and give you a personal discount code as well!"
+    adContent.append(adText);
 
-    /*const inputEmail = document.createElement ("input")
-    inputEmail.type("email");
-    container.append(inputEmail);*/
 
     const adImage = document.createElement ("img");
     adImage.src = "/assets/images/studio-media-9DaOYUYnOls-unsplash.jpg";
-    container.append(adImage);
+    adImage.alt = "Four books laying on top of each other showcasing the new cookbook from Tasty Vibes"
+    adContent.append(adImage);
 
     document.querySelector(".blog-post-content").append(container);
 }
