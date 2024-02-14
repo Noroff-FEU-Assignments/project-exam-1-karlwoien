@@ -2,11 +2,15 @@
 
 footer {
     background-color: var(--beige);
-    height: 400px;
-    margin-top: 100px;
-    padding-left: 120px;
-    padding-right: 120px;
+}
+
+.footer-content {
+    min-height: 400px;
+    margin: 100px auto auto;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 20px;
+    max-width: 1200px;
 }
 
 footer button,
@@ -16,7 +20,7 @@ footer input{
 }
 
 footer input {
-    width: 340px;
+    max-width: 340px;
     height: 25px;
 }
 
@@ -48,27 +52,26 @@ footer button:hover {
     display: flex;
 }
 
-.footer-right-links {
-    padding-top: 20px;
-    
-}
-
+.footer-right-links,
 .footer-right-some {
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 .footer-right-links h2,
 .footer-right-links ul,
-.footer-right-some h2{
+.footer-right-some h2 {
     font-size: 18px;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-weight: normal;
+    padding: 0;
 }
 
-.footer-right-links li {
-    font-size: 14px;
+.footer-right-links li,
+.footer-right-some li {
     list-style-type: none;
-    padding-top: 15px;
+    padding-top: 10px;
+    font-size: var(--fs-normal);
 }
 
 .footer-bottom-right {
@@ -78,5 +81,3 @@ footer button:hover {
     list-style-type: none;
     text-decoration: underline;
 }
-
-
