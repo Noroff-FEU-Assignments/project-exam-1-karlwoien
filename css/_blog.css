@@ -4,51 +4,51 @@
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
-    justify-content: baseline;
     flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
 }
 
 .blog-page-button {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
 }
 
 
 .intro-blog-filter{
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
 #blog-filter,
 #blog-sort {
-    width: 200px;
-    height: 25px;
+    width: 180px;
+    height: 35px;
     border: solid 1.5px var(--blue);
     border-radius: 4px;
+    padding-left: 5px;
+   font-size: var(--fs-normal);
 }
 
 .blog-grid-posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
 }
 
 .blog-grid-posts h3{
     font-size: var(--fs-normal);
-    max-width: 400px;
+    max-width: 300px;
 }
 
 
 .blog-grid-posts a {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .blog-grid-posts img {
-    width: 400px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
 }
 
 .blog-grid-posts a:hover {

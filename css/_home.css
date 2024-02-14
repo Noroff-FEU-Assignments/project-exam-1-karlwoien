@@ -2,7 +2,6 @@
 
 /*Section: Intro home*/
 .intro-content,
-.latest-posts-content,
 .categories-travels,
 .categories-recipes,
 .categories-reviews {
@@ -26,7 +25,6 @@
 }
 
 /* Section: latest post*/
-
 
 /*Section: categories*/
 .categories-content {
