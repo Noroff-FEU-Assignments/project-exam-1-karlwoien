@@ -1,17 +1,7 @@
 /* CSS file for media queries*/
 
 @media (max-width: 750px) {
-    main {
-    margin-left: 10px;
-    margin-right: 10px;
-    }
-    
-    footer,
-    header {
-    padding-left: 10px;
-    padding-right: 10px;
-    }
-
+    /*Hamburger menu and nav*/
     .hamburger {
         display: block;
     }
@@ -44,4 +34,47 @@
      margin-right: 60px;
 
     }
+    /*Home page*/
+    #newsletter-email {
+        width: 300px;
+    }
+    /*Specific post page*/
+    .blog-post-main,
+    .blog-post-main img {
+        width: 450px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    /*Global styling*/
+    main,
+    .header-content,
+    .footer-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /*Specific post page*/
+    .blog-post-main,
+    .blog-post-main img {
+        width: 400px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    /*Global styling*/
+    main,
+    .header-content,
+    .footer-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*Specific post page*/
+    .blog-post-main,
+    .blog-post-main img {
+        width: 350px;
+    }
+
 }

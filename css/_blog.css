@@ -27,7 +27,7 @@
     border: solid 1.5px var(--blue);
     border-radius: 4px;
     padding-left: 5px;
-   font-size: var(--fs-normal);
+    font-size: var(--fs-normal);
 }
 
 .blog-grid-posts {
