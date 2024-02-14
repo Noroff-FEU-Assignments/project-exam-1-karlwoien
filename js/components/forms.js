@@ -17,7 +17,8 @@ function validateMail(email) {
 }
 
 
-// Validation of contact form
+/*Validation of contact form*/
+
 
 //Fetching input
 const name = document.querySelector("#name");
