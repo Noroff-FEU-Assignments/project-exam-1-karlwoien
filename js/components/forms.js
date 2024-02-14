@@ -19,16 +19,18 @@ function validateMail(email) {
 
 // Validation of contact form
 
+//Fetching input
 const name = document.querySelector("#name");
-const nameError = document.querySelector("#name-error");
 const email = document.querySelector("#email");
-const emailError = document.querySelector("#email-error");
 const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subject-error");
 const message = document.querySelector("#message");
+
+// Errors
+const nameError = document.querySelector("#name-error");
+const emailError = document.querySelector("#email-error");
+const subjectError = document.querySelector("#subject-error");
 const messageError = document.querySelector("#message-error");
 
-const requiredFields = [name, email, subject, message];
 
 export function validateForm () {
    console.clear();
@@ -81,6 +83,7 @@ export function validateForm () {
     return validationOk;
 }
 
+//The if statement is probably not the best way to handle this, but is a fix so that the eventlistner doesn't effect other pages. Without it does. After som discussing with ChatGPT
 if (document.querySelector("#name") && document.querySelector("#email") && 
     document.querySelector("#subject") && document.querySelector("#message")) {
     
