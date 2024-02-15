@@ -2,7 +2,8 @@
 
 
 /* Styling of button in general*/
-button {
+button,
+.anchor-button {
     height: 40px;
     width: 110px;
     border: solid 1.5px var(--blue);
@@ -14,7 +15,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover,
+.anchor-button:hover{
     height: 40px;
     width: 110px;
     border: solid 1.5px var(--blue);
@@ -23,6 +25,13 @@ button:hover {
     color: var(--white);
     font-size: 14px;
     font-weight: bold;
+}
+
+/*styling of anchor tag specific that looks like a button and links to other pages*/
+
+.anchor-button {
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
