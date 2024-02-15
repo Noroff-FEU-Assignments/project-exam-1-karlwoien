@@ -1,14 +1,5 @@
 /* CSS file for media queries*/
 
-/*@media (max-width: 1254px) {
-    .intro-content {
-        margin-top: 50px;
-    }
-    
-    .intro-content-image {
-        margin-top: 30px;
-    }
-}*/
 
 @media (max-width: 800px){
     /*Hamburger menu and nav*/
@@ -76,7 +67,6 @@
     .blog-post-main img {
         width: 450px;
     }
-
 }
 
 @media (max-width: 580px) {
@@ -98,6 +88,13 @@
     }
 }
 
+@media (max-width: 494px) {
+    .left-btn,
+    .right-btn {
+        display:none;
+    }
+}
+
 
 @media (max-width: 400px) {
     /*Global styling*/
@@ -116,5 +113,8 @@
     #newsletter-email {
         width: 200px;
     }
-
+    /*Blogs*/
+    .intro-blog-filter {
+        flex-wrap: wrap;
+    }
 }
