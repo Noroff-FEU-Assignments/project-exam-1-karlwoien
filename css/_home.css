@@ -7,23 +7,17 @@
 .categories-recipes,
 .categories-reviews {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
     margin-top: 100px;
 }
 
-.categories-recipes {
-    flex-wrap:wrap-reverse;
-}
-
-
 .intro-content-text {
     max-width: 500px;
 }
 
-.intro-content-text button{
-    margin-top: 10px;
+.intro-content-text p{
+    padding-bottom: 20px;
 }
 
 .intro-content-image {
@@ -64,7 +58,13 @@
 .categories-travels-text,
 .categories-reviews-text,
 .categories-recipes-text {
-    max-width: 480px;
+    max-width: 500px;
+}
+
+.categories-travels-text p,
+.categories-reviews-text p,
+.categories-recipes-text p {
+    padding-bottom: 20px;
 }
 
 .categories-travels-image {
@@ -82,17 +82,17 @@
 /*Section: Newsletter*/
 .newsletter {
     margin-top: 100px;
+    background-color: var(--greige);
 }
 
 .newsletter-content {
-    background-color: var(--greige);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
     color: var(--blue);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    margin: auto;
     padding-bottom: 100px;
 }
 
@@ -108,6 +108,7 @@
     border: solid 1.5px var(--blue);
     padding-left: 10px;
     margin-bottom: 10px;
+    width: 400px;
 }
 
 

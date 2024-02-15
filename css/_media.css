@@ -1,6 +1,16 @@
 /* CSS file for media queries*/
 
-@media (max-width: 750px) {
+/*@media (max-width: 1254px) {
+    .intro-content {
+        margin-top: 50px;
+    }
+    
+    .intro-content-image {
+        margin-top: 30px;
+    }
+}*/
+
+@media (max-width: 800px){
     /*Hamburger menu and nav*/
     .hamburger {
         display: block;
@@ -35,9 +45,32 @@
 
     }
     /*Home page*/
-    #newsletter-email {
-        width: 300px;
+    .intro-content,
+    .categories-recipes {
+        flex-wrap: wrap;
+        margin-top: 50px;
     }
+    .intro-content-image,
+    .categories-travels-image,
+    .categories-reviews-image,
+    .categories-recipes-image {
+        margin-top: 30px;
+    }
+
+    .latest-posts-view {
+        padding: 0;
+    }
+
+    .categories-travels,
+    .categories-reviews {
+        flex-wrap:wrap-reverse;
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    
     /*Specific post page*/
     .blog-post-main,
     .blog-post-main img {
@@ -59,7 +92,10 @@
     .blog-post-main img {
         width: 400px;
     }
-
+    /*Home page*/
+    #newsletter-email {
+        width: 300px;
+    }
 }
 
 
@@ -75,6 +111,10 @@
     .blog-post-main,
     .blog-post-main img {
         width: 350px;
+    }
+    /*Home page*/
+    #newsletter-email {
+        width: 200px;
     }
 
 }
