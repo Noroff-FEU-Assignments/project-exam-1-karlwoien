@@ -75,11 +75,11 @@
           <div class="latest-posts-carousel">
             <div class="loader"></div>
             <div class="latest-posts-view">
-              <button id="left-btn" class="left-btn">
+              <button id="left-btn" class="left-btn" aria-label="Button to  slide left">
                 <i class="fa-solid fa-arrow-left fa-xl"></i>
               </button>
               <div id="carousel-items" class="carousel-items"></div>
-              <button id="right-btn" class="right-btn">
+              <button id="right-btn" class="right-btn" aria-label="Button to  slide right">
                 <i class="fa-solid fa-arrow-right fa-xl"></i>
               </button>
             </div>
@@ -128,7 +128,7 @@
               on alle the new tasty vibes?
             </h3>
             <form id="newsletter-form">
-              <label for="newsletter-email"></label>
+              <label for="newsletter-email"><span class="sr-only">E-mail</span></label>
               <input type="email" id="newsletter-email" placeholder="Enter your e-mail here...">
               <button>Subscribe</button>
             </form>
