@@ -19,32 +19,24 @@ async function createPostCard(postData) {
     document.querySelector(".blog-grid-posts").append(card);
 }
 
-// Render posts, with some help from chatGPT to figure out how to solve view more etc.
+// Render 9 first posts, and then more posts when view more is clicked  (with some help from chatGPT to figure out how to solve view more.)
 async function renderPosts(posts) {
-    // Clear existing posts
+    
     document.querySelector(".blog-grid-posts").innerHTML = '';
 
-    // Slice the posts based on totalPosts and postPerPage
     const postsToRender = posts.slice(0, totalPosts + postPerPage);
 
-    // Render the sliced posts
     postsToRender.forEach(createPostCard);
-
-    // Add an event listener to the "view more" button
-   document.getElementById('view-more-btn').addEventListener('click', async () => {
-   // Increment totalPosts by 9
-   totalPosts += 9;
-   // Render posts with the updated totalPosts
+    document.getElementById('view-more-btn').addEventListener('click', async () => {
+    totalPosts += 9;
    await renderPosts(posts);
    });
-
     // Check if there are more posts to load
     if (totalPosts >= posts.length) {
         // Hide the "view more" button if there are no more posts
         document.getElementById('view-more-btn').style.display = 'none';
     }
-
-}
+};
 
 // Load all the posts from server
 async function loadPosts() {
@@ -54,7 +46,7 @@ async function loadPosts() {
         loader.classList.remove("loader");
         renderPosts(posts);
     } catch (error) {
-        console.log("404 - not found");
+        alert(error.message);
     }
 }
 

@@ -5,26 +5,21 @@ import { urlPost } from "./url.js";
 
 export async function getPosts() {
     const response = await fetch(urlPosts);
+    const posts = await response.json();
 
-    if (response.ok) {
-        return await response.json();
+    if (!response.ok) {
+        throw new Error ("Due to a technical issue on our end we weren't abel to retrieve the list of posts. If the issue keeps happening, please contact us")
     }
-    throw new Error ("Need to add som error handling here")
-}
+    return posts;
+};
 
 //Get a single blog post by id
 
 export async function getPost (id) {
-
-    try {
-        const response = await fetch(urlPost + id);
-        const post = await response.json();
-        if (!response.ok) {
-            throw new Error ("Need to add som error handling here")
-        }
-        return post;
-        
-    } catch (error) {
-        console.log("Error with get posts");
+    const response = await fetch(urlPost + id);
+    const post = await response.json();
+    if (!response.ok) {
+        throw new Error ("Due to a technical issue on our end we were unable to access post with the id: " + id + " If the issue keeps happening, please contact us")
     }
-}
+    return post;
+};

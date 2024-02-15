@@ -2,7 +2,7 @@ import { getPost } from "../api/getPosts.js";
 import { changeTitle } from "../components/changeTitle.js";
 import { imageModal } from "../components/modal.js";
 
-// Create intro content for specific post
+// Create intro content for specific post (content from WP)
 
 function introPost (postData) {
 
@@ -16,7 +16,7 @@ function introPost (postData) {
     document.querySelector(".blog-post-intro").append(title);
 }
 
-// Create main content for specific post
+// Create main content for specific post (content from WP)
 
 function mainPost (postData) {
 
@@ -30,7 +30,7 @@ function mainPost (postData) {
     document.querySelector(".blog-post-content").append(container);
 }
 
-// Create ad content for specific post
+// Create ad content that is placed on the side (not WP content)
 
 function postAd () {
     const container = document.createElement("div");
@@ -75,6 +75,6 @@ export async function postPage () {
         postAd();
         imageModal();
     } catch (error) {
-        console.log("something wrong with postPage")
+        alert (error.message);
     }
 }
