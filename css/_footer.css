@@ -74,7 +74,7 @@ footer button:hover {
     font-size: var(--fs-normal);
 }
 
-.footer-bottom-right {
+.footer-bottom-right ul{
     display: flex;
     align-items: center;
     gap: 20px;
