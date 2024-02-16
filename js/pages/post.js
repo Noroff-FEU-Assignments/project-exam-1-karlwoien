@@ -10,7 +10,9 @@ function introPost (postData) {
     title.innerText = postData.title.rendered;
 
     const info = document.createElement ("p")
-    info.innerHTML = "By: Admin | Posted: " + postData.date + " | Readtime: 2 minutes";
+    const fullDate = postData.date;
+    const formattedDate = fullDate.split("T")[0];
+    info.innerHTML = "By: Admin | Posted: " + formattedDate + " | Read time: 2 minutes";
     title.append(info);
 
     document.querySelector(".blog-post-intro").append(title);
