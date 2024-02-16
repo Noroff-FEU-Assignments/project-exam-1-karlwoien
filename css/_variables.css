@@ -1,17 +1,21 @@
 /* CSS file for variables - only variables goes here*/
 
 :root {
-    /* colors*/
-   --blue: #233dff;
-   --beige: #f6f3ee;
-   --greige: #eeeeee;
-   --black: #000000;
-   --white: #ffffff;
+  /* colors*/
+  --blue: #233dff;
+  --beige: #f6f3ee;
+  --greige: #eeeeee;
+  --black: #000000;
+  --white: #ffffff;
 
-   /* Font sizes*/
-   --fs-xsmall: 0.75rem;    /*12px*/
-   --fs-btn: 0.875rem;      /*14px*/
-   --fs-normal: 1rem;       /*16px*/
-   --fs-medium: 2.375rem;   /*38px*/
-   --fs-large: 3rem;        /*48px*/
+  /* Font sizes dekstop*/
+  --fs-xsmall: 0.75rem; /*12px*/
+  --fs-btn: 0.875rem; /*14px*/
+  --fs-normal: 1rem; /*16px*/
+  --fs-medium: 2.375rem; /*38px*/
+  --fs-large: 3rem; /*48px*/
+
+  /* Font sizes specific for mobile and small devices */
+  --fs-medium-mobile: 1.75rem; /*28px*/
+  --fs-large-mobile: 2.25rem; /*36px*/
 }
