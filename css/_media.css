@@ -130,6 +130,11 @@
     #newsletter-email {
         max-width: 200px;
     }
+    /*Specific post page*/
+    .blog-post-main,
+    .blog-post-main img {
+        width: 350px;
+    }
 }
 
 
@@ -150,5 +155,20 @@
     /*Blogs*/
     .intro-blog-filter {
         flex-wrap: wrap;
+    }
+    /*Specific post page*/
+    .blog-post-main,
+    .blog-post-main img,
+    .blog-post-ad img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 340px) {
+    /*Specific post page*/
+    .blog-post-main,
+    .blog-post-main img,
+    .blog-post-ad img{
+        width: 250px;
     }
 }
