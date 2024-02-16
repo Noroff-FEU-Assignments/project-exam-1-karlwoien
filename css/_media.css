@@ -104,7 +104,7 @@
     }
     /*Home page*/
     #newsletter-email {
-        width: 300px;
+        max-width: 300px;
     }
 }
 
@@ -126,6 +126,10 @@
     .right-btn {
         display:none;
     }
+    /*Home page*/
+    #newsletter-email {
+        max-width: 200px;
+    }
 }
 
 
@@ -142,10 +146,7 @@
     .blog-post-main img {
         width: 350px;
     }
-    /*Home page*/
-    #newsletter-email {
-        width: 200px;
-    }
+    
     /*Blogs*/
     .intro-blog-filter {
         flex-wrap: wrap;

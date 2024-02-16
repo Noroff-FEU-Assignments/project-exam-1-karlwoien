@@ -106,9 +106,10 @@
 
 #newsletter-email {
     border: solid 1.5px var(--blue);
-    padding-left: 10px;
-    margin-bottom: 10px;
-    width: 400px;
+    width: 50vw;
+    max-width: 500px;
+    min-width: 100px;
+    box-sizing: border-box;
 }
 
 

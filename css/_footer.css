@@ -17,19 +17,15 @@ footer button,
 footer input{
     color: var(--black);
     border: solid 1px var(--black);
-}
-
-footer input {
-    max-width: 250px;
-    height: 25px;
+    height: 30px;
 }
 
 footer button,
 footer button:hover {
-    height: 30px;
     width: 90px;
     font-size: var(--fs-xsmall);
     font-weight: normal;
+    height: 30px;
 }
 
 .footer-top,
@@ -80,4 +76,12 @@ footer button:hover {
     gap: 20px;
     list-style-type: none;
     text-decoration: underline;
+}
+
+#newsletter-email-footer {
+    width: 50vw;
+    padding-left: 10px;
+    max-width: 300px;
+    min-width: 150px;
+    box-sizing: border-box;
 }
