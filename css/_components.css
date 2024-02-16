@@ -1,4 +1,4 @@
-/* CSS file for styling of different components*/
+/* CSS file for styling of different components: Loader, carousel, modal..*/
 
 /* Loader.. */
 .loader {
@@ -8,7 +8,6 @@
     align-items: center;
     transition: opacity 1s, visivility 1s;
 }
-
 
 .loader-hidden {
     opacity: 0;
@@ -34,7 +33,6 @@
 
 /*Carousel/slider homepage and about page 
 Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-carousel-using-html-css-js-7ab0561b39b3*/
-
 
 .latest-posts-carousel {
     padding-top: 0px;
@@ -82,7 +80,6 @@ Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-
 /*Styling of Modal*/
 /* Inspired by https://dev.to/salehmubashar/create-an-image-modal-with-javascript-2lf3*/
 
-
 .modal {
     width: 100%;
     height: 100%;
@@ -116,4 +113,3 @@ Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-
     cursor: pointer;
     color: var(--blue);
 }
-

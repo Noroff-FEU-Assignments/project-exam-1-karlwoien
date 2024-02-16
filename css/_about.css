@@ -22,20 +22,20 @@
     font-size: var(--fs-large);
 }
 
-.about-content-image {
+.about-content-image,
+.about-ad-image {
     width: 600px;
     height: 440px;
-    background-image: url("/assets/images/spencer-davis-vJsj-hgOEG0-unsplash.jpg");
     background-repeat: no-repeat;
     border-radius: 4px;
 }
 
+.about-content-image {
+    background-image: url("/assets/images/spencer-davis-vJsj-hgOEG0-unsplash.jpg");
+}
+
 .about-ad-image {
-    width: 600px;
-    height: 440px;
     background-image: url("/assets/images/kate-trysh-Dnkr_lmdKi8-unsplash.jpg");
-    background-repeat: no-repeat;
-    border-radius: 4px;
 }
 
 .latest-posts {
