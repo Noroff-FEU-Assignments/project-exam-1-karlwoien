@@ -75,6 +75,7 @@ Inspired by Medium: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-
 .carousel-items img{
     width: 350px;
     height: 500px;
+    border-radius: 4px;
 }    
 
 /*Styling of Modal*/

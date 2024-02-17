@@ -27,6 +27,7 @@
     max-width: 600px;
     height: auto;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .blog-post-main li {
@@ -58,4 +59,5 @@
     width: 350px;
     cursor: pointer;
     padding-top: 20px;
+    border-radius: 4px;
 }
