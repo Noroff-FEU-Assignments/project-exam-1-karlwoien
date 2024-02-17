@@ -19,7 +19,7 @@ async function createPostCard(postData) {
     document.querySelector(".blog-grid-posts").append(card);
 }
 
-// Render 9 first posts, and then more posts when view more is clicked  (with some help from chatGPT to figure out how to solve view more.)
+// Render 9 first posts, and then more posts when view more is clicked (with some help from chatGPT to figure out how to solve view more.)
 async function renderPosts(posts) {
     
     document.querySelector(".blog-grid-posts").innerHTML = '';

@@ -32,7 +32,7 @@ function mainPost (postData) {
     document.querySelector(".blog-post-content").append(container);
 }
 
-// Create ad content that is placed on the side (not WP content)
+// Create ad content that is placed on the side (not WP content, not part of blog post)
 
 function postAd () {
     const container = document.createElement("div");

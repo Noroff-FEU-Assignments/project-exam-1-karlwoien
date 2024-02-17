@@ -1,7 +1,6 @@
 import { getPosts } from "../api/getPosts.js";
 import { slideshow } from "../components/carousel.js";
 
-
 // Create carousel card for blog posts
 async function carouselCard (postData) {
  

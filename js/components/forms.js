@@ -1,3 +1,4 @@
+/*JS file for handling JavaScript Validation on Contact page*/
 
 // Check length of value entered in input
 function inputLength (value, length) {
@@ -9,7 +10,6 @@ function inputLength (value, length) {
 }
 
 // Check the e-mail that is passed in
-
 function validateMail(email) {
     const regex = /\w+@\w+\.\w+/;
     const patternOk = regex.test(email);
@@ -18,7 +18,6 @@ function validateMail(email) {
 
 
 /*Validation of contact form*/
-
 
 //Fetching input
 const name = document.querySelector("#name");
@@ -34,52 +33,40 @@ const messageError = document.querySelector("#message-error");
 
 
 export function validateForm () {
-   console.clear();
+   
 
     let validationOk = true;
     //Validation of name 
     if (inputLength(name.value, 5) === true) {
         nameError.style.display = "none";
-        console.log("Name is fine!")
     } else {
         if (name.targeted) {
             nameError.style.display = "block";
         }
-        validationOk = false;
-        console.log("Oooops. Name is not fine!")
     }
     //Validation of e-mail 
     if (validateMail(email.value) === true) {
         emailError.style.display = "none";
-        console.log("E-mail is fine!")
     } else {
         if (email.targeted) {
             emailError.style.display = "block";
         }
-        validationOk = false;
-        console.log("Oooops. E-mail is not fine!")
     }
     // Validation of subject
     if (inputLength(subject.value, 15) === true) {
         subjectError.style.display = "none";
-        console.log("Subject is fine!")
     } else {
         if (subject.targeted) {
             subjectError.style.display = "block";
         }
-        validationOk = false;
-        console.log("Oooops. Subject is not fine!")
     }
     // Validation of message
     if (inputLength(message.value, 25) === true) {
         messageError.style.display = "none";
-        console.log("Subject is fine!")
     } else {
         if (message.targeted) {
             messageError.style.display = "block";
         }
-        validationOk = false;
-        console.log("Oooops. Subject is not fine!")
     }
     return validationOk;
 }
