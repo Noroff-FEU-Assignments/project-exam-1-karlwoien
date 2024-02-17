@@ -1,4 +1,4 @@
-/*CSS file containing styling of blog page*/
+/*CSS file containing styling of blog page (list of blog posts)*/
 
 .intro-blog {
     margin-top: 100px;
@@ -13,7 +13,6 @@
     display: flex;
     justify-content: center;
 }
-
 
 .intro-blog-filter{
     display: flex;
@@ -40,7 +39,6 @@
     font-size: var(--fs-normal);
     max-width: 350px;
 }
-
 
 .blog-grid-posts a {
     padding-bottom: 30px;

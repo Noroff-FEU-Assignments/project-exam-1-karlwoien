@@ -1,5 +1,4 @@
-
-
+/*CSS file for styling of buttons and anchor"buttons"*/
 
 /* Styling of button in general*/
 button,
@@ -28,22 +27,18 @@ button:hover,
 }
 
 /*styling of anchor tag specific that looks like a button and links to other pages*/
-
 .anchor-button {
     padding: 10px 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /*Styling view more button*/
-
 #view-more-btn {
     margin-top: 20px;
 }
 
 
 /* Carousel/slider button*/
-
 .left-btn,
 .right-btn {
     border: none;

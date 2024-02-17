@@ -1,5 +1,12 @@
 /* CSS file for media queries*/
 
+@media (max-width: 856px){ 
+    /*Blog page*/
+    .intro-blog {
+        gap: 0px;
+        margin-bottom: 50px;
+    }
+}
 
 @media (max-width: 800px){
     /*Hamburger menu and nav*/
@@ -58,11 +65,13 @@
     .latest-posts-view {
         padding: 0;
     }
+    /*Blog page and blog specific*/
+    .intro-blog {
+        margin-top: 50px;
+    }
 }
 
-
 @media (max-width: 750px) {
-    
     /*Specific post page*/
     .blog-post-main,
     .blog-post-main img {
@@ -82,21 +91,7 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .intro-content,
-    .categories-recipes,
-    .categories-travels,
-    .categories-reviews,
-    .about-content,
-    .about-ad,
-    .latest-posts,
-    .intro-blog,
-    .blog-post,
-    .contact-intro  {
-        margin-top: 20px;
-    }
-    .intro-blog {
-        margin-bottom: 20px;
-    }
+    
     /*Specific post page*/
     .blog-post-main,
     .blog-post-main img {
@@ -137,7 +132,6 @@
     }
 }
 
-
 @media (max-width: 400px) {
     /*Global styling*/
     main,
@@ -151,7 +145,6 @@
     .blog-post-main img {
         width: 350px;
     }
-    
     /*Blogs*/
     .intro-blog-filter {
         flex-wrap: wrap;
